@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JTG Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body onload="show()">
+    <!-- Navbar -->
+    <header>
+      <img class="logo" src="Logo.png" alt="logo" />
+      <nav>
+        <ul class="nav_links">
+          <li class="list"><a href="#">About</a></li>
+          <li class="list"><a href="#">Features</a></li>
+          <li class="list"><a href="#">Pricing</a></li>
+          <li class="list"><a href="#">Testimonials</a></li>
+          <li class="list"><a href="#">Help</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul class="sign">
+          <li class="signin list">Sign in</li>
+          <li class="list">
+            <a href="#"><button class="signup">Sign Up</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- First Page -->
+    <div class="fp">
+      <div>
+        <h1 style="color: #0b132a; font-weight: 800">
+          Want anything to be <br />easy with <span class="max">Max</span
+          ><span class="cx">CX</span>.
+        </h1>
+        <p class="text">
+          Provide an experience for all your customers' needs with ease and fun
+          with<br /><span class="cx">MaxCX</span>. Discover interesting features
+          from us.
+        </p>
+        <button class="start">Get Started</button>
+      </div>
+      <img class="img1" src="img1.png" alt="img" />
+    </div>
+    <!-- Stats -->
+    <div class="icons">
+      <div style="margin: auto">
+        <img src="user.png" alt="user" style="width: 55px" />
+        <div style="float: right; padding-left: 25px">
+          <h3 style="font-size: 25px; color: #0b132a" class="cx">90K+</h3>
+          <p class="icon-text">Satisfied <br />Customers</p>
+        </div>
+      </div>
+      <div class="vl"></div>
+      <div style="margin: auto">
+        <img src="location.png" alt="location" style="width: 55px" />
+        <div style="float: right; padding-left: 25px">
+          <h3 style="font-size: 25px; color: #0b132a" class="cx">100+</h3>
+          <p class="icon-text">Blooming<br />Companies</p>
+        </div>
+      </div>
+      <div class="vl"></div>
+      <div style="margin: auto">
+        <img src="server.png" alt="server" style="width: 55px" />
+        <div style="float: right; padding-left: 25px">
+          <h3 style="font-size: 25px; color: #0b132a" class="cx">500+</h3>
+          <p class="icon-text">Support<br />Specialists</p>
+        </div>
+      </div>
+    </div>
+    <!-- Features -->
+    <div class="sp">
+      <img class="img2" src="img2.png" alt="img" />
+      <div>
+        <h2 style="font-weight: 900">
+          We Provide Many <br />
+          Features You Can Use.
+        </h2>
+        <p class="text">
+          You can explore features that we provide with fun and <br />have their
+          own functions each feature.
+        </p>
+        <ul style="list-style: none">
+          <li class="li-text">
+            <img class="vector" src="tick.png" alt="tick" />Managed Turn around
+            limits
+          </li>
+          <li class="li-text">
+            <img class="vector" src="tick.png" alt="tick" />Customised workflow
+          </li>
+          <li class="li-text">
+            <img class="vector" src="tick.png" alt="tick" />Hooks form Manual
+            steps
+          </li>
+          <li class="li-text">
+            <img class="vector" src="tick.png" alt="tick" />Realtime updates and
+            statistics
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Plans -->
+    <div>
+      <h2 style="text-align: center; font-weight: 900">Choose Your Plan</h2>
+      <p class="text" style="text-align: center">
+        Let's choose the best package for you and explore it happily and<br />cheerfully.
+      </p>
+      <div class="plans">
+        <div class="plans-div" id="div1">
+          <img class="plan-img" src="free.png" alt="free" />
+          <h4>Free Plan</h4>
+          <ul style="list-style: none">
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />10 Inbound
+              leads/pm
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />10 workflow
+              steps
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Unlimited usage
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Daily Stats &
+              updates
+            </li>
+          </ul>
+          <h3 class="plans-type-free">Free</h3>
+          <button onclick="fun1()" id="btn1" class="select">Select</button>
+        </div>
+        <div class="plans-div" id="div2">
+          <img class="plan-img" src="standard.png" alt="standard" />
+          <h4>Standard Plan</h4>
+          <ul style="list-style: none">
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />10k Inbound
+              leads/pm
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />100 workflow
+              steps
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Unlimited usage
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />On demand Stats
+              & updates
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Workflow
+              Customization
+            </li>
+          </ul>
+          <h3 class="plans-type-standard">$9</h3>
+          <h3 class="plans-time">/ mo</h3>
+          <button onclick="fun2()" id="btn2" class="select">Select</button>
+        </div>
+        <div class="plans-div" id="div3">
+          <img class="plan-img" src="premium.png" alt="free" />
+          <h4>Premium Plan</h4>
+          <ul style="list-style: none">
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Unlimited
+              Inbound leads
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Unlimited
+              workflow steps
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Unlimited usage
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Realtime Stats &
+              updates
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Workflow
+              Customization
+            </li>
+            <li class="li-text" style="margin-left: 3rem">
+              <img class="vector" src="vector.png" alt="tick" />Hooks for Manul
+              steps
+            </li>
+          </ul>
+          <h3 class="plans-type-premium">$12</h3>
+          <h3 class="plans-time">/ mo</h3>
+          <button onclick="fun3()" id="btn3" class="select">Select</button>
+        </div>
+      </div>
+    </div>
+    <!-- Map -->
+    <h2 style="text-align: center; font-weight: 900">
+      Huge Global Network of<br />Specialized workforce
+    </h2>
+    <p class="text" style="text-align: center">
+      See <span class="cx">MaxCX</span> everywhere to make it easier for your
+      customers<br />around the globe.
+    </p>
+    <div class="map">
+      <img style="height: 32rem; width: 65rem" src="map.png" alt="map" />
+    </div>
+    <!-- Sponsers -->
+    <div class="sponsers">
+      <img style="width: 65rem" src="sponsored.png" alt="sponsers" />
+    </div>
+    <!-- Carousel -->
+    <h2 style="text-align: center; font-weight: 900">
+      Trusted by Thousands of<br />Happy Customer
+    </h2>
+    <p class="text" style="text-align: center; margin-bottom: 2rem">
+      The stories of our customers who have joined us with great
+      <br />pleasure when using this crazy feature.
+    </p>
+    <div class="parent">
+      <button onclick="moveRight()" id="prev">
+        <img src="prev.png" alt="arrow1" />
+      </button>
+      <div class="child" id="c1">
+        <img style="display: inline-block" src="user1.png" alt="user1" />
+        <div class="user">
+          <div style="position: relative; right: 3.5rem">
+            <h6 class="users">Viezh Robert</h6>
+            <small class="sm">Warsaw, Poland</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "Wow... I am very happy to use this MaxCX service, it turned out to be
+          more than my expectations and so far there have been no problems.
+          MaxCX always the best."
+        </p>
+      </div>
+      <div class="child" id="c2">
+        <img style="display: inline-block" src="user2.png" alt="user1" />
+        <div class="user">
+          <div style="position: relative; right: 2.5rem">
+            <h6 class="users">Yessica Christy</h6>
+            <small class="sm">Shanxi, China</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "I like it because I've my userbase around the globe and MaxCX just
+          makes it a lot easier for me removing all the inter-continent
+          barriers."
+        </p>
+      </div>
+      <div class="child" id="c3">
+        <img
+          style="display: inline-block; height: 44px; width: 46px"
+          src="user3.png"
+          alt="user1"
+        />
+        <div class="user">
+          <div style="position: relative; right: 2.5rem">
+            <h6 class="users">Kim Young Jou</h6>
+            <small class="sm">Seoul, South Korea</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "This is very unusual for my business that currently requires a
+          partner that keeps my data at the highest possible security.."
+        </p>
+      </div>
+      <div class="child" id="c4">
+        <img style="display: inline-block" src="user1.png" alt="user1" />
+        <div class="user">
+          <div style="position: relative; right: 3.5rem">
+            <h6 class="users">Viezh Robert</h6>
+            <small class="sm">Warsaw, Poland</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "Wow... I am very happy to use this MaxCX service, it turned out to be
+          more than my expectations and so far there have been no problems.
+          MaxCX always the best."
+        </p>
+      </div>
+      <div class="child" id="c5">
+        <img style="display: inline-block" src="user2.png" alt="user1" />
+        <div class="user">
+          <div style="position: relative; right: 2.5rem">
+            <h6 class="users">Yessica Christy</h6>
+            <small class="sm">Shanxi, China</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "I like it because I've my userbase around the globe and MaxCX just
+          makes it a lot easier for me removing all the inter-continent
+          barriers."
+        </p>
+      </div>
+      <div class="child" id="c6">
+        <img
+          style="display: inline-block; height: 44px; width: 46px"
+          src="user3.png"
+          alt="user1"
+        />
+        <div class="user">
+          <div style="position: relative; right: 2.5rem">
+            <h6 class="users">Kim Young Jou</h6>
+            <small class="sm">Seoul, South Korea</small>
+          </div>
+          <div style="display: inline-block">
+            <p style="display: inline-block" class="sub-text">4.5</p>
+            <img style="display: inline-block" src="star.png" alt="star" />
+          </div>
+        </div>
+        <p class="user-text">
+          "This is very unusual for my business that currently requires a
+          partner that keeps my data at the highest possible security.."
+        </p>
+      </div>
+      <button onclick="moveLeft()" id="next">
+        <img src="next.png" alt="arrow2" />
+      </button>
+    </div>
+    <!-- Subscribe Card -->
+    <div class="subscribe">
+      <div>
+        <h2 style="margin: 3rem 0 0 4rem; font-weight: 900">
+          Subscribe Now & get<br />Special Features!
+        </h2>
+        <p class="sub-text" style="margin: 0 4rem">
+          Let's subscribe with us and find the fun.
+        </p>
+      </div>
+      <button style="margin: auto 4rem" class="start">Subscribe Now</button>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="foot">
+        <div class="medias">
+          <img class="logo" src="logo.png" alt="logo" />
+          <p class="text">
+            <b>Max</b><span class="cx">CX</span> is a private network that
+            has<br />unique features and has high secutity.
+          </p>
+
+          <div class="media">
+            <img class="fb" src="fb.png" alt="fb" />
+          </div>
+          <div class="media">
+            <img class="twitter" src="twitter.png" alt="twitter" />
+          </div>
+          <div class="media">
+            <img class="insta" src="insta.png" alt="insta" />
+          </div>
+          <p class="cr">©2020 Max<b>CX</b></p>
+        </div>
+        <div class="prod">
+          <h5 style="display: flex; font-weight: 900">Product</h5>
+          <ul style="list-style: none">
+            <li class="sub-text">Download</li>
+            <li class="sub-text">Pricing</li>
+            <li class="sub-text">Locations</li>
+            <li class="sub-text">Services</li>
+            <li class="sub-text">Countries</li>
+            <li class="sub-text">Blog</li>
+          </ul>
+        </div>
+        <div class="engage">
+          <h5 style="display: flex; font-weight: 900">Engage</h5>
+          <ul style="list-style: none">
+            <li class="sub-text">MaxCX?</li>
+            <li class="sub-text">FAQ</li>
+            <li class="sub-text">Explore</li>
+            <li class="sub-text">About Us</li>
+            <li class="sub-text">Privacy Policy</li>
+            <li class="sub-text">Terms of Service</li>
+          </ul>
+        </div>
+        <div class="money">
+          <h5 style="display: flex; font-weight: 900">Earn Money</h5>
+          <ul style="list-style: none">
+            <li class="sub-text">Affiliate</li>
+            <li class="sub-text">Become Partner</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
